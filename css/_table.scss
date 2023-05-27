@@ -1,0 +1,32 @@
+.table-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+
+  button {
+    padding: .25rem;
+    font-size: .75rem;
+  }
+}
+
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+th, td {
+  padding: .5rem;
+  font-size: .875rem;
+
+  &.fit {
+    width: 50px;
+  }
+}
+

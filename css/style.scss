@@ -1,0 +1,41 @@
+@import './form';
+@import './table';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+*:focus {
+  box-shadow: 0 0 0 1px #04d361;
+}
+
+body {
+  background: #262626;
+  color: #d4d4d4;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4rem;
+  padding-inline: 1.5rem;
+}
+
+h2 {
+  margin-bottom: .75rem;
+  font-size: 18px;
+}
+
+.main-container {
+  max-width: 62rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: flex-start;
+  gap: 1rem;
+}

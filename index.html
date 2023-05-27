@@ -15,12 +15,48 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>API Request</title>
 </head>
 
 <body>
-  <h2>API Request</h2>
+  <div class="main-container">
+    <form class="form-add">
+      <h2>Adicionar usuário</h2>
+      <label for="name">Nome</label>
+      <input type="text" id="name" placeholder="Nome do usuário" />
+      <label for="name">E-mail</label>
+      <input type="text" id="email" placeholder="E-mail do usuário" />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th class="fit">Editar</th>
+            <th class="fit">Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Danny Jones</td>
+            <td>daniel@mcfly.co.uk</td>
+            <td class="fit"><button class="edit" type="button">Editar</button></td>
+            <td class="fit"><button class="remove" type="button">Deletar</button></td>
+          </tr>
+          <tr>
+            <td>Harry Judd</td>
+            <td>harry@mcfly.co.uk</td>
+            <td class="fit"><button class="edit" type="button">Editar</button></td>
+            <td class="fit"><button class="remove" type="button">Deletar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <script src="/script.js"></script>
 </body>
 
