@@ -13,9 +13,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" />
   <title>API Request</title>
 </head>
 
@@ -30,33 +33,49 @@
       <button type="submit">Adicionar</button>
     </form>
 
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>E-mail</th>
-            <th class="fit">Editar</th>
-            <th class="fit">Deletar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Danny Jones</td>
-            <td>daniel@mcfly.co.uk</td>
-            <td class="fit"><button class="edit" type="button">Editar</button></td>
-            <td class="fit"><button class="remove" type="button">Deletar</button></td>
-          </tr>
-          <tr>
-            <td>Harry Judd</td>
-            <td>harry@mcfly.co.uk</td>
-            <td class="fit"><button class="edit" type="button">Editar</button></td>
-            <td class="fit"><button class="remove" type="button">Deletar</button></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="right">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th class="fit">Editar</th>
+              <th class="fit">Deletar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <form class="card create-card">
+        <header>
+          <h2>Em que você está pensando?</h2>
+        </header>
+
+        <div class="create-wrapper">
+          <div class="input-ctt">
+            <label for="title">Título</label>
+            <input type="text" id="title" />
+          </div>
+
+          <div class="input-ctt">
+            <label for="content">Conteúdo</label>
+            <textarea name="content" id="content"></textarea>
+          </div>
+
+          <button type="submit">Criar</button>
+        </div>
+      </form>
+
+      <div class="posts-container">
+      </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/script.js"></script>
 </body>
 

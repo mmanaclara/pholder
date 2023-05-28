@@ -24,18 +24,20 @@ button {
   transition: all 200ms;
   font-weight: 500;
   cursor: pointer;
-  color: #fff;
+  color: #d4d4d4;
+  background: transparent;
+  transition: all 200ms;
 
   &:hover {
     opacity: 0.8;
   }
 
-  &.edit {
-    background: #23a0df;
+  &.edit:hover {
+    color: #23a0df;
   }
 
-  &.remove {
-    background: #e11d48;
+  &.remove:hover {
+    color: #f36685;
   }
 }
 
@@ -45,7 +47,7 @@ button {
   gap: .5rem;
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
 
   button {
     background: #04d361;
@@ -53,5 +55,10 @@ button {
     font-size: .875rem;
     font-weight: 600;
     margin-top: .75rem;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 42rem;
+    width: 100%;
   }
 }
